@@ -10,7 +10,7 @@ public class RandomStringChooser
   }
   public String getNext(){
     if(words.size() > 0){
-      return(words.remove((int)(Math.random()*words.size()))):
+      return(words.remove((int)(Math.random()*words.size())));
         }else{
       return "NONE";
     }
@@ -18,7 +18,7 @@ public class RandomStringChooser
 }
 
 public class RandomLetterChooser extends RandomStringChooser{
-  public RandomLetterChoose(String str){
+  public RandomLetterChooser(String str){
     super(getSingleLetters(str));
   }
 }
